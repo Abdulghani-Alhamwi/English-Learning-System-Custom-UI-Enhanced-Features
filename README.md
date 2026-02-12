@@ -29,10 +29,15 @@ This reduces code duplication and simplifies long-term maintenance.
 ### 📌 Core Features :
 
 1. Splash screen with progress bar and initialization message.
+
 2. Add English words.
+
 3. Each word supports **up to 4 Arabic translations**.
+
 4. English pronunciation with configurable voice.
+
 5. System sound control via **TrackBar**.
+
 6. **Enhanced ListView with Context Menu (right mouse click):**
 
    * Change view mode.
@@ -42,6 +47,10 @@ This reduces code duplication and simplifies long-term maintenance.
    * Delete all words.
    * Check selected words.
    * Uncheck selected words.
+
+7. **Responsive layout behavior across core UI components**, enabling dynamic resizing and proportional control adjustments to maintain layout consistency and usability across standard desktop resolutions.
+
+> 🔄 The current version supports structured responsive behavior. Advanced responsiveness and enhanced multi-DPI optimization will be further improved in upcoming versions.
 
 ### ✅ Word Check System :
 
@@ -114,7 +123,7 @@ Enhanced custom controls include:
 ⚠️ Requires **Visual Studio 2026**.
 
 1. Clone or download the repository.
-2. Ensure your **Display Scale** is set to 100 for proper UI display.
+2. For proper UI display, it is **recommended** to set your Windows **Display Scale to 100%**. Other scaling values may affect layout alignment in the current version.
 3. Open the solution in **Visual Studio 2026**.
 4. Ensure **.NET Framework 4.8.1** is installed.
 5. Set your **Google AI API key** in class `clsWord`.
@@ -124,5 +133,6 @@ Enhanced custom controls include:
 ## 🔮 Future Enhancements :
 
 1. Migrate storage from file system to **relational database**.
-2. Add responsive UI support.
+2. Further improve and fully enhance UI responsiveness to support multiple screen resolutions, different aspect ratios, and advanced DPI scaling.
 3. Implement learning progress tracking and analytics.
+4. Optimize layout behavior for high-resolution and multi-monitor environments.

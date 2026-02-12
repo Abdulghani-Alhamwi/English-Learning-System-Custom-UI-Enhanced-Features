@@ -36,18 +36,18 @@ namespace English_Learning_Management_System
 
         List <string> AddArabicTranslations (string T1,string T2,string T3,string T4)
         {
-            List <string>AT=new List<string>();
+            List <String> Trans = new List<String>();
 
             if (T1 != "" && T1!=null)
-                AT.Add(T1) ;
+                Trans.Add(T1) ;
             if(T2!="" && T2 != null)
-                AT.Add(T2);
+                Trans.Add(T2);
             if (T3!="" && T3 != null)
-                AT.Add(T3);
+                Trans.Add(T3);
             if (T4!="" && T4 != null)
-                AT.Add(T4);
+                Trans.Add(T4);
 
-            return AT;
+            return Trans;
         }
 
         string CheckedWordsFileName = "CheckedStateWords.txt";
@@ -144,13 +144,14 @@ namespace English_Learning_Management_System
             return lCheckedWordsID;
         }
 
-        private void AddWordsToListView(bool Refresh=false)
+        private void AddWordsToListView(bool Refresh = false)
         {
             ListViewItem Item;
 
             List<string> lWords = clsWord.LoadEnglishWordsFromFile("EnglishWords.txt");
             List<clsWord.ArabicTranslation> lWordsTranslations = clsWord.LoadArabicTranslationsFromFile("ArabicTranslationWords.txt");
-            List<int> CheckedWordsID= LoadCheckedWordsIdFromFile(CheckedWordsFileName);
+            List<int> CheckedWordsID = LoadCheckedWordsIdFromFile(CheckedWordsFileName);
+
 
             lblTotalWords.Text = "Total Words : " + lWords.Count();
 
@@ -159,41 +160,43 @@ namespace English_Learning_Management_System
             if (Refresh)
                 lstvWords.Items.Clear();
 
-            if(lWords.Count > 0)
-            while (lWords.Count!=Counter)
-            {
-                Item = new ListViewItem();
-                Item.Text = lWords[Counter];
-                                
-                Item.ForeColor = Color.FromArgb(255, 235, 235, 235);
-                
-                 List<string> lArabicTranslations= AddArabicTranslations(lWordsTranslations[Counter].Translation1, lWordsTranslations[Counter].Translation2, lWordsTranslations[Counter].Translation3, lWordsTranslations[Counter].Translation4);
+            if (lWords.Count > 0 && lWordsTranslations.Count > 0)
+                while (lWords.Count != Counter)
+                {
+                    Item = new ListViewItem();
+                    Item.Text = lWords[Counter];
 
-                    for(short i =0;i< lArabicTranslations.Count(); i++)
-                    {
-                        Item.SubItems.Add(lArabicTranslations[i]);
-                      Item.SubItems[i].ForeColor = Color.FromArgb(255, 235, 235, 235);
-                      
-                    }
+                    Item.ForeColor = Color.FromArgb(255, 235, 235, 235);
 
-                    for(int i=0; i<CheckedWordsID.Count(); i++)
+                    if (lWordsTranslations.Count != Counter)
                     {
-                        if(Counter==CheckedWordsID[i])
+                        List<string> lArabicTranslations = AddArabicTranslations(lWordsTranslations[Counter].Translation1, lWordsTranslations[Counter].Translation2, lWordsTranslations[Counter].Translation3, lWordsTranslations[Counter].Translation4);
+
+                        for (short i = 0; i < lArabicTranslations.Count(); i++)
                         {
-                            Item.BackColor = Color.Green;
-                            for (short j = 0; i < lArabicTranslations.Count(); i++)
+                            Item.SubItems.Add(lArabicTranslations[i]);
+                            Item.SubItems[i].ForeColor = Color.FromArgb(255, 235, 235, 235);
+
+                        }
+
+                        for (int i = 0; i < CheckedWordsID.Count(); i++)
+                        {
+                            if (Counter == CheckedWordsID[i])
                             {
-                                Item.SubItems[j].BackColor = Color.Green;
+                                Item.BackColor = Color.Green;
+                                for (short j = 0; i < lArabicTranslations.Count(); i++)
+                                {
+                                    Item.SubItems[j].BackColor = Color.Green;
+                                }
                             }
                         }
                     }
+                    lstvWords.Items.Add(Item);
 
-                lstvWords.Items.Add(Item);
+                    lstvWords.Focus();
 
-                lstvWords.Focus();
-
-                Counter++;
-            }
+                    Counter++;
+                }
         }
         private void frmMainScreen_Load(object sender, EventArgs e)
         {

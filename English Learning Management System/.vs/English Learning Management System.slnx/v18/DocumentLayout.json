@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system-using-my-desinged-controls\\english learning management system\\screens\\frmaddenglishword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmaddenglishword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system-using-my-desinged-controls\\english learning management system\\screens\\frmaddenglishword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmaddenglishword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system-using-my-desinged-controls\\english learning management system\\screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system-using-my-desinged-controls\\english learning management system\\screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,39 +43,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmAddEnglishWord.cs",
-              "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmAddEnglishWord.cs",
-              "RelativeDocumentMoniker": "Screens\\frmAddEnglishWord.cs",
-              "ToolTip": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmAddEnglishWord.cs",
-              "RelativeToolTip": "Screens\\frmAddEnglishWord.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAIwGcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T10:10:30.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmAddEnglishWord.cs [Design]",
-              "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmAddEnglishWord.cs",
-              "RelativeDocumentMoniker": "Screens\\frmAddEnglishWord.cs",
-              "ToolTip": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmAddEnglishWord.cs [Design]",
-              "RelativeToolTip": "Screens\\frmAddEnglishWord.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T10:10:24.896Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMainScreen.cs [Design]",
+              "Title": "frmMainScreen.cs",
               "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmMainScreen.cs",
               "RelativeDocumentMoniker": "Screens\\frmMainScreen.cs",
-              "ToolTip": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmMainScreen.cs [Design]",
-              "RelativeToolTip": "Screens\\frmMainScreen.cs [Design]",
+              "ToolTip": "D:\\My Projects\\English-Learning-Management-System-Using-My-Desinged-Controls\\English Learning Management System\\Screens\\frmMainScreen.cs",
+              "RelativeToolTip": "Screens\\frmMainScreen.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAADgv6wAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T10:04:12.352Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-12T11:57:57.424Z",
+              "EditorCaption": ""
             }
           ]
         }

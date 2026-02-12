@@ -69,9 +69,10 @@
             this.btnExit.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnExit.GradientStartColor = System.Drawing.Color.Maroon;
             this.btnExit.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
-            this.btnExit.Location = new System.Drawing.Point(1518, -2);
+            this.btnExit.Location = new System.Drawing.Point(2530, -4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(85, 94);
+            this.btnExit.Size = new System.Drawing.Size(142, 166);
             this.btnExit.TabIndex = 9;
             this.btnExit.TabStop = false;
             this.btnExit.Text = "X";
@@ -90,9 +91,10 @@
             this.btnAddTranslations.GradientEndColor = System.Drawing.Color.DarkGreen;
             this.btnAddTranslations.GradientStartColor = System.Drawing.Color.LimeGreen;
             this.btnAddTranslations.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
-            this.btnAddTranslations.Location = new System.Drawing.Point(643, 735);
+            this.btnAddTranslations.Location = new System.Drawing.Point(1072, 1300);
+            this.btnAddTranslations.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAddTranslations.Name = "btnAddTranslations";
-            this.btnAddTranslations.Size = new System.Drawing.Size(305, 80);
+            this.btnAddTranslations.Size = new System.Drawing.Size(508, 142);
             this.btnAddTranslations.TabIndex = 8;
             this.btnAddTranslations.TabStop = false;
             this.btnAddTranslations.Text = "Add Translation/s";
@@ -103,10 +105,11 @@
             // 
             this.txtArabicExample1.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtArabicExample1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtArabicExample1.Location = new System.Drawing.Point(874, 147);
+            this.txtArabicExample1.Location = new System.Drawing.Point(1457, 260);
+            this.txtArabicExample1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtArabicExample1.Multiline = true;
             this.txtArabicExample1.Name = "txtArabicExample1";
-            this.txtArabicExample1.Size = new System.Drawing.Size(586, 80);
+            this.txtArabicExample1.Size = new System.Drawing.Size(974, 138);
             this.txtArabicExample1.TabIndex = 1;
             this.txtArabicExample1.Tag = "E1";
             this.txtArabicExample1.Text = "Enter Translation For Example 1";
@@ -118,10 +121,11 @@
             // 
             this.txtBoxEnglishExample1.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtBoxEnglishExample1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtBoxEnglishExample1.Location = new System.Drawing.Point(133, 147);
+            this.txtBoxEnglishExample1.Location = new System.Drawing.Point(222, 260);
+            this.txtBoxEnglishExample1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBoxEnglishExample1.Multiline = true;
             this.txtBoxEnglishExample1.Name = "txtBoxEnglishExample1";
-            this.txtBoxEnglishExample1.Size = new System.Drawing.Size(586, 80);
+            this.txtBoxEnglishExample1.Size = new System.Drawing.Size(974, 138);
             this.txtBoxEnglishExample1.TabIndex = 0;
             this.txtBoxEnglishExample1.Tag = "A1";
             this.txtBoxEnglishExample1.Text = "Enter Example For English Word 1";
@@ -133,10 +137,11 @@
             // 
             this.txtBoxEnglishExample3.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtBoxEnglishExample3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtBoxEnglishExample3.Location = new System.Drawing.Point(133, 421);
+            this.txtBoxEnglishExample3.Location = new System.Drawing.Point(222, 745);
+            this.txtBoxEnglishExample3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBoxEnglishExample3.Multiline = true;
             this.txtBoxEnglishExample3.Name = "txtBoxEnglishExample3";
-            this.txtBoxEnglishExample3.Size = new System.Drawing.Size(586, 80);
+            this.txtBoxEnglishExample3.Size = new System.Drawing.Size(974, 138);
             this.txtBoxEnglishExample3.TabIndex = 4;
             this.txtBoxEnglishExample3.Tag = "A3";
             this.txtBoxEnglishExample3.Text = "Enter Example For English Word 3";
@@ -148,10 +153,11 @@
             // 
             this.txtBoxEnglishExample4.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtBoxEnglishExample4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtBoxEnglishExample4.Location = new System.Drawing.Point(133, 558);
+            this.txtBoxEnglishExample4.Location = new System.Drawing.Point(222, 987);
+            this.txtBoxEnglishExample4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBoxEnglishExample4.Multiline = true;
             this.txtBoxEnglishExample4.Name = "txtBoxEnglishExample4";
-            this.txtBoxEnglishExample4.Size = new System.Drawing.Size(586, 80);
+            this.txtBoxEnglishExample4.Size = new System.Drawing.Size(974, 138);
             this.txtBoxEnglishExample4.TabIndex = 6;
             this.txtBoxEnglishExample4.Tag = "A4";
             this.txtBoxEnglishExample4.Text = "Enter Example For English Word 4";
@@ -163,10 +169,11 @@
             // 
             this.txtBoxEnglishExample2.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtBoxEnglishExample2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtBoxEnglishExample2.Location = new System.Drawing.Point(133, 284);
+            this.txtBoxEnglishExample2.Location = new System.Drawing.Point(222, 502);
+            this.txtBoxEnglishExample2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBoxEnglishExample2.Multiline = true;
             this.txtBoxEnglishExample2.Name = "txtBoxEnglishExample2";
-            this.txtBoxEnglishExample2.Size = new System.Drawing.Size(586, 80);
+            this.txtBoxEnglishExample2.Size = new System.Drawing.Size(974, 138);
             this.txtBoxEnglishExample2.TabIndex = 2;
             this.txtBoxEnglishExample2.Tag = "A2";
             this.txtBoxEnglishExample2.Text = "Enter Example For English Word 2";
@@ -178,10 +185,11 @@
             // 
             this.txtArabicExample2.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtArabicExample2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtArabicExample2.Location = new System.Drawing.Point(874, 284);
+            this.txtArabicExample2.Location = new System.Drawing.Point(1457, 502);
+            this.txtArabicExample2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtArabicExample2.Multiline = true;
             this.txtArabicExample2.Name = "txtArabicExample2";
-            this.txtArabicExample2.Size = new System.Drawing.Size(586, 80);
+            this.txtArabicExample2.Size = new System.Drawing.Size(974, 138);
             this.txtArabicExample2.TabIndex = 3;
             this.txtArabicExample2.Tag = "E2";
             this.txtArabicExample2.Text = "Enter Translation For Example 2";
@@ -193,10 +201,11 @@
             // 
             this.txtArabicExample3.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtArabicExample3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtArabicExample3.Location = new System.Drawing.Point(874, 421);
+            this.txtArabicExample3.Location = new System.Drawing.Point(1457, 745);
+            this.txtArabicExample3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtArabicExample3.Multiline = true;
             this.txtArabicExample3.Name = "txtArabicExample3";
-            this.txtArabicExample3.Size = new System.Drawing.Size(586, 80);
+            this.txtArabicExample3.Size = new System.Drawing.Size(974, 138);
             this.txtArabicExample3.TabIndex = 5;
             this.txtArabicExample3.Tag = "E3";
             this.txtArabicExample3.Text = "Enter Translation For Example 3";
@@ -208,10 +217,11 @@
             // 
             this.txtArabicExample4.Font = new System.Drawing.Font("Cairo", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.txtArabicExample4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.txtArabicExample4.Location = new System.Drawing.Point(874, 558);
+            this.txtArabicExample4.Location = new System.Drawing.Point(1457, 987);
+            this.txtArabicExample4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtArabicExample4.Multiline = true;
             this.txtArabicExample4.Name = "txtArabicExample4";
-            this.txtArabicExample4.Size = new System.Drawing.Size(586, 80);
+            this.txtArabicExample4.Size = new System.Drawing.Size(974, 138);
             this.txtArabicExample4.TabIndex = 7;
             this.txtArabicExample4.Tag = "E4";
             this.txtArabicExample4.Text = "Enter Translation For Example 4";
@@ -232,28 +242,33 @@
             this.panel1.Controls.Add(this.btnAddTranslations);
             this.panel1.Controls.Add(this.txtArabicExample1);
             this.panel1.Controls.Add(this.txtBoxEnglishExample1);
-            this.panel1.Location = new System.Drawing.Point(-5, 8);
+            this.panel1.Location = new System.Drawing.Point(-8, 14);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1609, 912);
+            this.panel1.Size = new System.Drawing.Size(2682, 1614);
             this.panel1.TabIndex = 10;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(568, 134);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(947, 237);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(13, 14);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // frmExample
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnAddTranslations;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::English_Learning_Management_System.Properties.Resources.Whisk_464189a0601ec149fd841f6c137a8e2edr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1597, 851);
+            this.CancelButton = this.btnExit;
+            this.ClientSize = new System.Drawing.Size(1948, 1108);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmExample";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmExample";

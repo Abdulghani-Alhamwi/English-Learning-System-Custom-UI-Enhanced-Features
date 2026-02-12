@@ -1,0 +1,3 @@
+Vosk by alphacep, 115K downloads
+Vosk is an offline open source speech recognition toolkit, It enables speech recognition models for 20+ languages and dialects - English, Indian English, German, French, Spanish,
+Portuguese, Chinese, Russian, Turkish, Vietnamese, Italian, Dutch, Catalan, Arabic, Greek, Farsi, Filipino, Ukrainian, Kazakh, Swedish, Japanese, Esperanto, Hindi, Czech. More to co...

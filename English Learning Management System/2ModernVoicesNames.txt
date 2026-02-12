@@ -1,0 +1,71 @@
+Name: 
+
+Microsoft Server Speech Text to Speech Voice (ca-ES,Herena)
+
+Microsoft Server Speech Text to Speech Voice (en-AU,Hayley)
+
+Microsoft Server Speech Text to Speech Voice (en-GBCHazel)
+
+Name: Microsoft Server Speech Text to Speech Voice (en-IN,
+Heera)
+Culture: en-IN
+
+Name: Microsoft Server Speech Text to Speech Voice (en-LIS
+Helen)
+Culture: en-US
+
+Name: Microsoft Server Speech Text to Speech Voice (da-DKv
+Helle)
+Culture: da-DK
+
+Name: Microsoft Senjer Speech Text to Speech Voice (es-ES,
+Helena)
+Culture: es-ES
+
+Name: Microsoft Server Speech Text to Speech Voice (es-MXY
+Hilda)
+Culture: es-MX
+
+Name: Microsoft Server Speech Text to Speech Voice (fi-Fl,
+Heidi)
+Culture: fi-Fl
+
+Name: Microsoft Server Speech Text to Speech Voice (fr-FRY
+Hortense)
+Culture: fr-FR
+
+Name: Microsoft Server Speech Text to Speech Voice Oa-JP,
+Haruka)
+Culture:ja-JP
+
+ame: Microsoft Server Speech Text to Speech Voice (ko-KRr
+e a mi)
+ulture: ko-KR
+
+Name: Microsoft Server Speech Text to Speech Voice (nb-NO,
+Hulda)
+Culture: nb-NO
+
+Name: Microsoft Server Speech Text to Speech Voice (nl-NL,
+Hanna)
+Culture: nl-NL
+
+Name: Microsoft Server Speech Text to Speech Voice (pl-PL,
+Paulina)
+Culture: pl-PL
+
+Name: Microsoft Server Speech Text to Speech Voice (pt-PT,
+Helia)
+Culture: pt-PT
+
+Name: Microsoft Server Speech Text to Speech Voice (ru-RU,
+Elena)
+Culture: ru-RU
+
+Name: Microsoft Server Speech Text to Speech Voice (zh-HK
+HunYee)
+Culture: zh-HK
+
+Name: Microsoft Server Speech Text to Speech Voice (zh-TvV,
+HanHan)
+Culture: zh-TvV

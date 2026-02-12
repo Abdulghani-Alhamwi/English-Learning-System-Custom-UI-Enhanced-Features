@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace English_Learning_Management_System
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            // don't set size/position here; runtime may override it
+        }
+
+        protected override void OnShown(EventArgs e)
+        {
+            base.OnShown(e);
+            // make the form maximized when it's actually shown
+            this.WindowState = FormWindowState.Maximized;
+
+            // If you prefer to fill the working area (keep taskbar visible) instead use:
+            // this.StartPosition = FormStartPosition.Manual;
+            // this.Bounds = Screen.FromControl(this).WorkingArea;
+        }
+    }
+}

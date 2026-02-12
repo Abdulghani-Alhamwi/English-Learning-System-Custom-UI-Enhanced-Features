@@ -1,0 +1,59 @@
+🎨 60% — PRIMARY BACKGROUND (NOT WHITE)
+
+Muted Slate Violet
+
+#D6D1E8
+
+
+✔ Neutral but colored
+✔ Long-session friendly
+✔ Professional (used in enterprise dashboards)
+
+🎨 30% — SECONDARY SURFACES (STRONG PURPLE)
+
+Deep Royal Purple
+
+#5A3ED1              or                120; 20; 180
+
+✔ Authority
+✔ Structure
+✔ Serious learning tone
+
+Used for:
+
+Navigation
+
+Cards
+
+Section headers
+
+🎨 10% — ACCENT / ACTION (STRONG GREEN)
+
+Professional Emerald
+
+#1F9D55      orlighter:  139; 201; 77      or stronger :    Lime
+
+
+✔ Confident, not playful
+✔ Clear success/action signal
+✔ Enterprise-grade green
+
+Used for:
+
+Primary CTAs
+
+Progress
+
+Completed states
+
+✍️ TEXT COLORS (NO GRAY, NO BLACK)
+
+Primary text:
+
+#1A1630
+
+
+Secondary text:
+
+#2C2750
+

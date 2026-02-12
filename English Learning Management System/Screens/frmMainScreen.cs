@@ -257,11 +257,17 @@ namespace English_Learning_Management_System
         {
             device.AudioEndpointVolume.MasterVolumeLevelScalar = (trackBar1.Value / 100.0f);
         }
-        bool LEGACY = false;
+        bool LEGACY = true;
+        bool defaultvoice = true;
         private void lstvWords_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)
         {
             if (lstvWords.SelectedItems.Count == 0)
             {
+                if (defaultvoice)
+                {
+                    clsLib.ChangeSpellVoice("Microsoft Zira Desktop");
+                    defaultvoice = false;
+                }
                 if (LEGACY)
                     clsLib.SpellAWordLEGACY(e.Item.SubItems[0].Text);
                 else

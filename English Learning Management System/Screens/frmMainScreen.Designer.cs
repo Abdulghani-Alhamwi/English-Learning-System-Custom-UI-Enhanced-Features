@@ -150,7 +150,7 @@
             this.deleteAllWordsToolStripMenuItem1,
             this.unCheckSelectedWordsToolStripMenuItem});
             this.WordsListViewContextMenu.Name = "WordsListViewContextMenu";
-            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 298);
+            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 320);
             // 
             // deleteAllWordsToolStripMenuItem
             // 
@@ -197,7 +197,9 @@
             // 
             // microsoftZiraDesktopToolStripMenuItem
             // 
+            this.microsoftZiraDesktopToolStripMenuItem.Checked = true;
             this.microsoftZiraDesktopToolStripMenuItem.CheckOnClick = true;
+            this.microsoftZiraDesktopToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.microsoftZiraDesktopToolStripMenuItem.Name = "microsoftZiraDesktopToolStripMenuItem";
             this.microsoftZiraDesktopToolStripMenuItem.Size = new System.Drawing.Size(307, 42);
             this.microsoftZiraDesktopToolStripMenuItem.Text = "Microsoft Zira Desktop";
@@ -229,9 +231,7 @@
             // 
             // herenaToolStripMenuItem1
             // 
-            this.herenaToolStripMenuItem1.Checked = true;
             this.herenaToolStripMenuItem1.CheckOnClick = true;
-            this.herenaToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.herenaToolStripMenuItem1.Name = "herenaToolStripMenuItem1";
             this.herenaToolStripMenuItem1.Size = new System.Drawing.Size(307, 42);
             this.herenaToolStripMenuItem1.Text = "Herena";

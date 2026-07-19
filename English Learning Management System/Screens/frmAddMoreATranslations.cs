@@ -64,6 +64,7 @@ namespace English_Learning_Management_System.Screens
             else
             {
                 clsWord.SaveArabicTranslationsToFile(_ArabicTranslation1, clsWord.FixedAppDataArabicTLocation, true, txtA2.Text, txtA3.Text, txtA4.Text);
+                SaveEnglishWordsToFile(_EnglishWord, clsWord.FixedAppDataEnglishWordsLocation);
 
                 MessageBox.Show("Added Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -76,7 +77,9 @@ namespace English_Learning_Management_System.Screens
             if (!EditMode)
             {
                 if (_EnglishWord != "" && _ArabicTranslation1 != "")
+                {
                     _SaveArabicTranslations();
+                }
                
             }
             else

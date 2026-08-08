@@ -130,7 +130,7 @@ namespace Lib
             public string Translation4;
         }
 
-        internal static stArabicTranslation ATranslations;
+        internal static stArabicTranslation ArTranslations;
 
         internal static List<stArabicTranslation> LoadArabicTranslationsFromFile(string FileName)
         {

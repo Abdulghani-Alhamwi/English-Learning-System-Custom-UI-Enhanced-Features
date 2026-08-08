@@ -1,17 +1,14 @@
 ﻿using English_Learning_Management_System.Screens;
 using Lib;
+using Microsoft.Speech.Synthesis;
 using NAudio.CoreAudioApi;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using Microsoft.Speech.Synthesis;
-using System.Threading.Tasks;
-using System.Threading;
-using System.IO;
-using System.Management.Instrumentation;
-
+using static System.Windows.Forms.ListViewItem;
 
 namespace English_Learning_Management_System
 {
@@ -26,7 +23,6 @@ namespace English_Learning_Management_System
             frmLifeCycle = frm;
             InitializeComponent();
         }
-
         private void frmMainScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmLifeCycle.Close();
@@ -34,7 +30,7 @@ namespace English_Learning_Management_System
 
         List<string> AddArabicTranslations(string T1, string T2, string T3, string T4)
         {
-            List<String> Trans = new List<String>();
+            List<string> Trans = new List<string>();
 
             if (T1 != "" && T1 != null)
                 Trans.Add(T1);
@@ -132,6 +128,11 @@ namespace English_Learning_Management_System
                 for (int i = 0; i < lstvWords.SelectedItems.Count; i++)
                 {
                     AddCheckedWordToFile(clsWord.FixedCheckedWordsFileLocation, GetWordID(lstvWords.SelectedItems[i].Text));
+                    lstvWords.SelectedItems[i].BackColor = Color.Green;
+
+                    for (int j = 0; j < lstvWords.SelectedItems[i].SubItems.Count; j++)
+                        lstvWords.SelectedItems[i].SubItems[j].BackColor = Color.Green;
+
                 }
             }
             else
@@ -141,14 +142,19 @@ namespace English_Learning_Management_System
                     for (int i = 0; i < lWordsIds.Count; i++)
                     {
                         AddCheckedWordToFile(clsWord.FixedCheckedWordsFileLocation, lWordsIds[i]);
+
+
+                        lstvWords.Items[lWordsIds[i]].BackColor = Color.Green;
+
+                        for (int j = 0; j < lstvWords.Items[lWordsIds[i]].SubItems.Count; j++)
+                            lstvWords.Items[lWordsIds[i]].SubItems[j].BackColor = Color.Green;
                     }
                 }
             }
-             AddWordsToListView(true);
         }
 
 
-        private async void AddWordsToListView(bool Refresh = false, bool UpdateMode = false,List<int>lWordsIds=null)
+        private void AddWordsToListView(bool Refresh = false, bool UpdateMode = false,List<int>lWordsIds=null)
         {
             if(UpdateMode)
             {
@@ -705,7 +711,7 @@ namespace English_Learning_Management_System
             }
             catch // Catch any exception .
             {
-                // Future Enhancement is to saave error on log file .
+                // Future Enhancement is to save error on log file .
                 zhTvVHanHanToolStripMenuItem.Checked = false;
             }
         }
@@ -737,12 +743,20 @@ namespace English_Learning_Management_System
 
             if (MessageBox.Show("Are you sure you want to delete selected word/s ?", "Need Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
+                int[] SelectedItemsIndexes = new int [lstvWords.SelectedItems.Count];
+
                 for (int i = 0; i < lstvWords.SelectedItems.Count; i++)
                 {
                     clsWord.DeleteWord(lstvWords.SelectedItems[i].Text, clsWord.FixedAppDataEnglishWordsLocation, clsWord.FixedAppDataArabicTLocation, clsWord.FixedCheckedWordsFileLocation);
+                    SelectedItemsIndexes[i]=lstvWords.SelectedItems[i].Index;
                 }
 
-                AddWordsToListView(true);
+                for (int i = SelectedItemsIndexes.Length - 1; i >= 0 ; i--)
+                {
+                    lstvWords.Items.RemoveAt(SelectedItemsIndexes[i]);
+                }
+
+                lblTotalWords.Text = lstvWords.Items.Count.ToString();
             }
 
         }
@@ -774,9 +788,6 @@ namespace English_Learning_Management_System
 
             List<int> lWordsIds = clsWord.LoadCheckedWordsIdFromFile(clsWord.FixedCheckedWordsFileLocation);
             frmAddWords.ShowDialog();
-            AddWordsToListView(true,true, lWordsIds);
-
-
         }
 
         private void ESpeakSelectedWords_Click(object sender, EventArgs e)
@@ -794,11 +805,37 @@ namespace English_Learning_Management_System
 
         }
 
+        private void AddNewWordToListView(string NewEnglishWord,string ArabicTranslation1,string ArabicTranslation2 = null,string ArabicTranslation3 = null ,string ArabicTranslation4 = null)
+        {
+            
+            ListViewItem NewItem = new ListViewItem();
+            
+            string[] SubItems = new string[5];
+
+            NewItem.Text = NewEnglishWord;
+            SubItems[0] = ArabicTranslation1;
+
+            if (ArabicTranslation2 != null)
+                SubItems[1] = ArabicTranslation2;
+
+            if (ArabicTranslation3 != null)
+                SubItems[2] = ArabicTranslation3;
+
+            if (ArabicTranslation4 != null)
+                SubItems[3] = ArabicTranslation4;
+
+
+            NewItem.SubItems.AddRange(SubItems);
+            lstvWords.Items.Add(NewItem);
+
+            lblTotalWords.Text = lstvWords.Items.Count.ToString();
+        }
+
         private void btnAddENGWords_Click(object sender, EventArgs e)
         {
-            Form frmAddWords = new frmAddEnglishWord();
+            frmAddEnglishWord frmAddWords = new frmAddEnglishWord();
+            frmAddWords.OnSavingOrUpdating += AddNewWordToListView;
             frmAddWords.ShowDialog();
-            AddWordsToListView(true);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -896,7 +933,5 @@ namespace English_Learning_Management_System
                 SearchedItem.BackColor = lstvWords.BackColor;
             }
         }
-
-       
     }
 }

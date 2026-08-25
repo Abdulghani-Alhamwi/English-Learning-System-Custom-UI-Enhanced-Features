@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using static Lib.clsWord;
 
 namespace English_Learning_Management_System.Screens
 {
@@ -17,6 +18,7 @@ namespace English_Learning_Management_System.Screens
 
         public event Action<string, string, string, string, string> OnSavingOrUpdating;
 
+        internal stArabicTranslation ArTranslations;
         public frmAddEnglishWord(bool EditWord = false, string OldWord = null,string Translation1=null, string Translation2 = null, string Translation3 = null, string Translation4 = null)
         {
             InitializeComponent();
@@ -74,9 +76,9 @@ namespace English_Learning_Management_System.Screens
                 {
                     if (OldSelectedWord != null)
                     {
-                        clsWord.ArTranslations = new clsWord.stArabicTranslation();
-                        clsWord.ArTranslations.Translation1 = txtArabicWord.Text;
-                        clsWord.EditWord(OldSelectedWord, txtBoxEnglishWord.Text, clsWord.FixedAppDataEnglishWordsLocation, clsWord.FixedAppDataArabicTLocation, clsWord.ArTranslations, clsWord.FixedCheckedWordsFileLocation);
+                        ArTranslations = new clsWord.stArabicTranslation();
+                        ArTranslations.Translation1 = txtArabicWord.Text;
+                        clsWord.EditWord(OldSelectedWord, txtBoxEnglishWord.Text, clsWord.FixedAppDataEnglishWordsLocation, clsWord.FixedAppDataArabicTLocation, ArTranslations, clsWord.FixedCheckedWordsFileLocation);
                         MessageBox.Show("Word updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         OnSavingOrUpdating?.Invoke(txtBoxEnglishWord.Text, txtArabicWord.Text, null, null, null);
 

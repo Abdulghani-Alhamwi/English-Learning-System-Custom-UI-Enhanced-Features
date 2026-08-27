@@ -225,9 +225,8 @@ namespace English_Learning_Management_System
         List<InstalledVoice> AllInstalledVoices = clsLib.GetAllModernInstalledVoices();
         clsLib.ChangeSpellVoiceMOD(AllInstalledVoices[3]);
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
             }
         }
         public void RemovePreviouseCheckedItemForView(short ChoosedItemNumber)
@@ -408,9 +407,8 @@ namespace English_Learning_Management_System
             UnCheckAllUnUsedOptions(3);
                 LEGACY = false; 
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 herenaToolStripMenuItem.Checked = false;
             }
         }
@@ -424,9 +422,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(4);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 hayleyToolStripMenuItem.Checked = false;
             }
         }
@@ -442,9 +439,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(5);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 gBCHazelToolStripMenuItem.Checked = false;
             }
         }
@@ -459,9 +455,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(6);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 herenaToolStripMenuItem1.Checked = false;
             }
         }
@@ -475,9 +470,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(7);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 iNHeeraToolStripMenuItem.Checked = false;
             }
         }
@@ -491,9 +485,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(8);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 daDKvHelleToolStripMenuItem.Checked = false;
             }
         }
@@ -508,9 +501,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(9);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 esHelenaToolStripMenuItem.Checked = false;
             }
         }
@@ -525,9 +517,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(10);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 esMXYHildaToolStripMenuItem.Checked = false;
             }
         }
@@ -542,9 +533,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(11);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 fiHeidiToolStripMenuItem.Checked = false;
             }
         }
@@ -559,9 +549,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(12);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 frFRYHortenseToolStripMenuItem.Checked = false;
             }
         }
@@ -576,9 +565,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(13);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 jaHarukaToolStripMenuItem.Checked = false;
             }
         }
@@ -593,9 +581,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(14);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 kokrKRreAMiToolStripMenuItem.Checked = false;
             }
         }
@@ -610,9 +597,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(15);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 nbnoHuldaToolStripMenuItem.Checked = false;
             }
         }
@@ -627,9 +613,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(16);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 nbNOHuldaToolStripMenuItem1.Checked = false;
             }
         }
@@ -644,9 +629,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(17);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 rUElenaToolStripMenuItem.Checked = false;
             }
         }
@@ -660,9 +644,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(18);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 plPLPaulinaToolStripMenuItem.Checked = false;
             }
         }
@@ -676,9 +659,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(19);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 ptHeliaToolStripMenuItem.Checked = false;
             }
         }
@@ -692,9 +674,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(20);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to saave error on log file .
                 zhHKHKHunYeeToolStripMenuItem.Checked = false;
             }
         }
@@ -709,9 +690,8 @@ namespace English_Learning_Management_System
                 UnCheckAllUnUsedOptions(21);
                 LEGACY = false;
             }
-            catch // Catch any exception .
+            catch
             {
-                // Future Enhancement is to save error on log file .
                 zhTvVHanHanToolStripMenuItem.Checked = false;
             }
         }
@@ -788,6 +768,7 @@ namespace English_Learning_Management_System
 
             List<int> lWordsIds = clsWord.LoadCheckedWordsIdFromFile(clsWord.FixedCheckedWordsFileLocation);
             frmAddWords.ShowDialog();
+            AddWordsToListView(true);
         }
 
         private void ESpeakSelectedWords_Click(object sender, EventArgs e)

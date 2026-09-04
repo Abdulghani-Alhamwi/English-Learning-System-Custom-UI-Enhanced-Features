@@ -42,6 +42,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.enhancedButton1 = new EnhancedControls.EnhancedButton();
+            this.btnExit = new EnhancedControls.EnhancedButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,7 +120,7 @@
             this.btnArabicTranslation3.ForeColor = System.Drawing.Color.White;
             this.btnArabicTranslation3.GradientEndColor = System.Drawing.Color.Indigo;
             this.btnArabicTranslation3.GradientStartColor = System.Drawing.Color.Goldenrod;
-            this.btnArabicTranslation3.Location = new System.Drawing.Point(942, 823);
+            this.btnArabicTranslation3.Location = new System.Drawing.Point(942, 784);
             this.btnArabicTranslation3.Name = "btnArabicTranslation3";
             this.btnArabicTranslation3.Size = new System.Drawing.Size(614, 168);
             this.btnArabicTranslation3.TabIndex = 3;
@@ -140,7 +141,7 @@
             this.btnArabicTranslation4.ForeColor = System.Drawing.Color.White;
             this.btnArabicTranslation4.GradientEndColor = System.Drawing.Color.Indigo;
             this.btnArabicTranslation4.GradientStartColor = System.Drawing.Color.Goldenrod;
-            this.btnArabicTranslation4.Location = new System.Drawing.Point(136, 823);
+            this.btnArabicTranslation4.Location = new System.Drawing.Point(136, 784);
             this.btnArabicTranslation4.Name = "btnArabicTranslation4";
             this.btnArabicTranslation4.Size = new System.Drawing.Size(614, 168);
             this.btnArabicTranslation4.TabIndex = 4;
@@ -155,7 +156,7 @@
             this.lblExample.BackColor = System.Drawing.Color.Transparent;
             this.lblExample.Font = new System.Drawing.Font("Cairo", 63F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblExample.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblExample.Location = new System.Drawing.Point(173, 598);
+            this.lblExample.Location = new System.Drawing.Point(173, 509);
             this.lblExample.Name = "lblExample";
             this.lblExample.Size = new System.Drawing.Size(1318, 247);
             this.lblExample.TabIndex = 30;
@@ -181,7 +182,7 @@
             this.lblTE.BackColor = System.Drawing.Color.Transparent;
             this.lblTE.Font = new System.Drawing.Font("Cairo", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblTE.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblTE.Location = new System.Drawing.Point(172, 497);
+            this.lblTE.Location = new System.Drawing.Point(172, 406);
             this.lblTE.Name = "lblTE";
             this.lblTE.Size = new System.Drawing.Size(370, 116);
             this.lblTE.TabIndex = 31;
@@ -194,7 +195,7 @@
             this.lblTranslation.BackColor = System.Drawing.Color.Transparent;
             this.lblTranslation.Font = new System.Drawing.Font("Cairo", 63F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblTranslation.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblTranslation.Location = new System.Drawing.Point(89, 849);
+            this.lblTranslation.Location = new System.Drawing.Point(89, 755);
             this.lblTranslation.Name = "lblTranslation";
             this.lblTranslation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTranslation.Size = new System.Drawing.Size(1243, 270);
@@ -216,7 +217,7 @@
             this.smoothProgressIndicator1.GradientDirection = EnhancedControls.SmoothProgressIndicator.GradientFlow.Horizontal;
             this.smoothProgressIndicator1.GradientEnd = System.Drawing.Color.Gold;
             this.smoothProgressIndicator1.GradientStart = System.Drawing.Color.Gold;
-            this.smoothProgressIndicator1.Location = new System.Drawing.Point(750, 732);
+            this.smoothProgressIndicator1.Location = new System.Drawing.Point(750, 693);
             this.smoothProgressIndicator1.Name = "smoothProgressIndicator1";
             this.smoothProgressIndicator1.ShowGlow = false;
             this.smoothProgressIndicator1.Size = new System.Drawing.Size(291, 291);
@@ -234,7 +235,7 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.enhancedButton1);
-            this.panel1.Location = new System.Drawing.Point(25, 12);
+            this.panel1.Location = new System.Drawing.Point(25, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1739, 1050);
             this.panel1.TabIndex = 35;
@@ -260,6 +261,29 @@
             this.enhancedButton1.UseVisualStyleBackColor = false;
             this.enhancedButton1.Visible = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Black;
+            this.btnExit.BorderRadius = 10;
+            this.btnExit.BorderSize = 1;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.FocusColor = System.Drawing.Color.Maroon;
+            this.btnExit.Font = new System.Drawing.Font("Cairo", 37.25F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnExit.GradientStartColor = System.Drawing.Color.Maroon;
+            this.btnExit.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
+            this.btnExit.Location = new System.Drawing.Point(1683, 21);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(81, 75);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.TabStop = false;
+            this.btnExit.Text = " X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmEnglishWordsPresentaion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -267,7 +291,9 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::English_Learning_Management_System.Properties.Resources.Whisk_129c13e609585c5a034470c1ca88eddedr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1781, 1100);
+            this.ClientSize = new System.Drawing.Size(1781, 1061);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.smoothProgressIndicator1);
             this.Controls.Add(this.lblExample);
             this.Controls.Add(this.lblReady);
@@ -279,10 +305,11 @@
             this.Controls.Add(this.btnEnglishWord);
             this.Controls.Add(this.btnArabicTranslation4);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEnglishWordsPresentaion";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmEnglishWordsPresentaion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmEnglishWordsPresentaion_Load);
             this.panel1.ResumeLayout(false);
@@ -305,5 +332,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
         private EnhancedControls.EnhancedButton enhancedButton1;
+        private EnhancedControls.EnhancedButton btnExit;
     }
 }

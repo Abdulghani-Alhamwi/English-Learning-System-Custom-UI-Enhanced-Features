@@ -507,7 +507,6 @@
             this.ESpeakSelectedWords.TabIndex = 3;
             this.ESpeakSelectedWords.Text = "Speak Selected Words";
             this.ESpeakSelectedWords.UseVisualStyleBackColor = false;
-            this.ESpeakSelectedWords.Visible = false;
             this.ESpeakSelectedWords.Click += new System.EventHandler(this.ESpeakSelectedWords_Click);
             // 
             // makeAnyPartOfFormDraggable1
@@ -647,6 +646,7 @@
             this.Controls.Add(this.lstvWords);
             this.Controls.Add(this.lblTotalWords);
             this.Controls.Add(this.ESpeakSelectedWords);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Cairo", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(10, 16, 10, 16);

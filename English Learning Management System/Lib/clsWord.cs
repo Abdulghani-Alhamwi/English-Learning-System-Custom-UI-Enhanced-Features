@@ -1,12 +1,9 @@
 ﻿using English_Learning_Management_System;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Speech.Synthesis.TtsEngine;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -370,8 +367,6 @@ namespace Lib
             Word: {EnglishWord}
             ";
 
-
-
                 string url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent";
 
                 object body = new
@@ -404,7 +399,7 @@ namespace Lib
                         WordExample.ExampleInEnglish = "";
                         WordExample.ExampleInArabic = "";
                         MessageBox.Show(
-                            "HTTP error: " + (response != null ? response.StatusCode.ToString() : "No response"),
+                            "Error may be because of not setting API or because of not using Vpn,\nYou can still use this feature with your own examples with its translations in order to spell the english examples in the presentation screen\n\nHTTP error: " + (response != null ? response.StatusCode.ToString() : "No response"),
                             "Error",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
@@ -527,7 +522,7 @@ namespace Lib
                 if (!response.IsSuccessStatusCode)
                 {
                     MessageBox.Show(
-                        "HTTP error: " + response.StatusCode,
+                        "Error may be because of not setting API or because of not using Vpn,\nYou can still use this feature with your own examples with its translations in order to spell the english examples in the presentation screen\n HTTP error: " + response.StatusCode,
                         "Error",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error

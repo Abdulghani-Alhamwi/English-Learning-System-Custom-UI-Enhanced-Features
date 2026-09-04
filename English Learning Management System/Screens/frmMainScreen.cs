@@ -14,11 +14,11 @@ namespace English_Learning_Management_System
 {
     public partial class frmMainScreen : Form
     {
-        Form frmLifeCycle;
+        frmLFFirstLoad frmLifeCycle;
      
         private MMDeviceEnumerator enumerator;
         private MMDevice device;
-        public frmMainScreen(Form frm)
+        public frmMainScreen(frmLFFirstLoad frm)
         {
             frmLifeCycle = frm;
             InitializeComponent();
@@ -770,13 +770,24 @@ namespace English_Learning_Management_System
             frmAddWords.ShowDialog();
             AddWordsToListView(true);
         }
-
+        bool IsScale100()
+        {
+            using (Graphics g = this.CreateGraphics())
+            {
+                return (g.DpiX == 96 && g.DpiY == 96);
+            }
+        }
         private void ESpeakSelectedWords_Click(object sender, EventArgs e)
         {
             if (lstvWords.SelectedItems.Count >= 1 && lstvWords.SelectedItems.Count <= 4)
             {
-                frmExample frmE = new frmExample(this, prepareSelectedItemsToMove(lstvWords.SelectedItems));
-                frmE.ShowDialog();
+                if (IsScale100())
+                {
+                    frmExample frmE = new frmExample(this, prepareSelectedItemsToMove(lstvWords.SelectedItems));
+                    frmE.ShowDialog();
+                }
+                 else
+                    MessageBox.Show("To use this feature , display scale should be 100%\nYou can modify display scale from settings then display then choose display scale 100%", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else

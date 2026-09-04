@@ -15,7 +15,7 @@ namespace English_Learning_Management_System.Lib
             public List<ListViewItem> SelectedWords;
             public string[] Examples;
             public string[] ExamplesTranslations;
-            public Form PrevioceForm;
+            public Form PreviosForm;
             public Form frmExamplesI;
             public Form frmCurrent;
 
@@ -34,14 +34,14 @@ namespace English_Learning_Management_System.Lib
         }
         clsWord Word = new clsWord();
 
-        public clsSpeakWordsInView(Form CurrentForm, Form frmE, frmMainScreen frm, List<ListViewItem> SelectedWords, string[] Examples, string[] ExamplesTranslations, EnhancedButton GbtnEnglishWord, Label lblExample, Label lblTranslation, Label lblReady, Label lblTE, EnhancedButton GbtnTranslation1, EnhancedButton GbtnTranslation2, EnhancedButton GbtnTranslation3, EnhancedButton GbtnTranslation4, Panel guna2GradientPanel1, SmoothProgressIndicator guna2ProgressIndicator1, System.Windows.Forms.Timer t)
+        public clsSpeakWordsInView(Form CurrentForm, Form frmE, frmMainScreen frmMain, List<ListViewItem> SelectedWords, string[] Examples, string[] ExamplesTranslations, EnhancedButton GbtnEnglishWord, Label lblExample, Label lblTranslation, Label lblReady, Label lblTE, EnhancedButton GbtnTranslation1, EnhancedButton GbtnTranslation2, EnhancedButton GbtnTranslation3, EnhancedButton GbtnTranslation4, Panel guna2GradientPanel1, SmoothProgressIndicator guna2ProgressIndicator1, System.Windows.Forms.Timer t)
         {
             Word.SelectedWords = SelectedWords;
 
             Word.Examples = Examples;
             Word.ExamplesTranslations = ExamplesTranslations;
 
-            Word.PrevioceForm = frm;
+            Word.PreviosForm = frmMain;
             Word.frmExamplesI = frmE;
             Word.frmCurrent = CurrentForm;
 
@@ -75,7 +75,6 @@ namespace English_Learning_Management_System.Lib
         private void PrepareEnglishButton()
         {
             Word.GbtnEnglishWord.Visible = true;
-            //Word.GradientPanel1.Refresh();
             if (SpeakEnglishWord)
             {
                 clsLib.SpellAWordMOD(Word.GbtnEnglishWord.Text);
@@ -135,8 +134,6 @@ namespace English_Learning_Management_System.Lib
             Word.lblReady.Visible = false;
             Word.ProgressIndicator1.Visible = false;
             Word.ProgressIndicator1.Stop();
-            //Word.GradientPanel1.Refresh();
-
         }
 
         private void ShowIntroControls()
@@ -145,7 +142,6 @@ namespace English_Learning_Management_System.Lib
             Word.lblReady.Visible = true;
             Word.ProgressIndicator1.Start();
             Word.ProgressIndicator1.Visible = true;
-            //Word.GradientPanel1.Refresh();
         }
 
         private void _HideTranslationsButtons()
@@ -154,8 +150,6 @@ namespace English_Learning_Management_System.Lib
             Word.GbtnTranslation2.Visible = false;
             Word.GbtnTranslation3.Visible = false;
             Word.GbtnTranslation4.Visible = false;
-            //Word.GradientPanel1.Refresh();
-
         }
 
         private void _ShowExample()
@@ -163,9 +157,7 @@ namespace English_Learning_Management_System.Lib
             Word.lblExample.Visible = true;
             Word.lblTE.Visible = true;
             Word.lblTranslation.Visible = true;
-            //Word.GradientPanel1.Refresh();
             clsLib.SpellAWordMOD("Example");
-            Thread.Sleep(800);
             clsLib.SpellAWordMOD(Word.lblExample.Text);
         }
 
@@ -175,7 +167,6 @@ namespace English_Learning_Management_System.Lib
             Word.lblExample.Visible = false;
             Word.lblTranslation.Visible = false;
             Word.lblTE.Visible = false;
-            //Word.GradientPanel1.Refresh();
         }
 
         void _ShownTranslationsButtons(short WaitShowing)
@@ -189,7 +180,6 @@ namespace English_Learning_Management_System.Lib
                 if (!TrasnaltionsBtn1HasShowed)
                 {
                     Word.GbtnTranslation1.Visible = true;
-                    //Word.GradientPanel1.Refresh();
                     clsLib.SpellAWordMOD(Word.GbtnEnglishWord.Text);
                     TrasnaltionsBtn1HasShowed = true;
                 }
@@ -199,7 +189,6 @@ namespace English_Learning_Management_System.Lib
                 if (!TrasnaltionsBtn2HasShowed)
                 {
                     Word.GbtnTranslation2.Visible = true;
-                    //Word.GradientPanel1.Refresh();
                     clsLib.SpellAWordMOD(Word.GbtnEnglishWord.Text);
                     TrasnaltionsBtn2HasShowed = true;
                 }
@@ -210,7 +199,6 @@ namespace English_Learning_Management_System.Lib
                 if (!TrasnaltionsBtn3HasShowed)
                 {
                     Word.GbtnTranslation3.Visible = true;
-                    //Word.GradientPanel1.Refresh();
                     clsLib.SpellAWordMOD(Word.GbtnEnglishWord.Text);
                     TrasnaltionsBtn3HasShowed = true;
                 }
@@ -219,9 +207,7 @@ namespace English_Learning_Management_System.Lib
             {
                 if (!TrasnaltionsBtn4HasShowed)
                 {
-                    //ChangeGunaButtonColor(GbtnTranslation4, GbtnTranslation1.FillColor, Color.DarkSeaGreen);64, 0, 0
                     Word.GbtnTranslation4.Visible = true;
-                  //  Word.GradientPanel1.Refresh();
                     clsLib.SpellAWordMOD(Word.GbtnEnglishWord.Text);
                     TrasnaltionsBtn4HasShowed = true;
                 }
@@ -245,7 +231,6 @@ namespace English_Learning_Management_System.Lib
                 TrasnaltionsBtn4HasShowed = false;
                 _HideExample();
                 Word.GbtnEnglishWord.Visible = false;
-                //Word.GradientPanel1.Refresh();
                 WaitShTranslationsBtns = -1;
                 AllowExampleshawn = true;
                 ShowIntroControls();
@@ -271,7 +256,12 @@ namespace English_Learning_Management_System.Lib
             }
         }
 
-
+        internal void FinishLesson()
+        {
+            Word.PreviosForm.Show();
+            Word.frmCurrent.Close();
+            Word.frmExamplesI.Close();
+        }
         void _MoveToNextRound()
         {
             if (RoundCounter == Word.SelectedWords.Count)
@@ -281,22 +271,15 @@ namespace English_Learning_Management_System.Lib
                 if (MessageBox.Show("Lesson Has Ended , Do You Want To Repeat Lesson", "End Of Lesson", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     _ResetSettingsToRepeat(true);
-                    return;
                 }
                 else
                 {
-                    Word.PrevioceForm.Opacity = 0.0;
-                    Word.PrevioceForm.Show();
-                    Word.frmCurrent.Close();
-                    Word.frmExamplesI.Close();
-                    Word.PrevioceForm.Opacity = 100.0;
-                    return;
+                    FinishLesson();
                 }
+                    return;
             }
             _ResetSettingsToRepeat(false);
         }
-
-
         bool IsAllTranslationsHasShawn()
         {
             if (T1 && T2 && T3 && T4)
@@ -319,7 +302,6 @@ namespace English_Learning_Management_System.Lib
             if (HideIntro)
             {
                 _HideIntroControls();
-                //Word.GradientPanel1.Refresh();
                 HideIntro = false;
             }
 
@@ -355,7 +337,6 @@ namespace English_Learning_Management_System.Lib
         {
             Word.timer.Enabled = true;
         }
-
         }
     }
   
